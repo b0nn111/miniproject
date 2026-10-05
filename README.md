@@ -37,3 +37,43 @@
 - JavaScript 文件通过语法检查。
 - 检索确认观察到的真实人名未写入项目。
 
+## English
+
+### WeChat Mini Program Prototype Inspired by "Shu Fu Hui"
+
+This is a native WeChat Mini Program UI prototype that recreates the main visible features and structure of "Shu Fu Hui". The project uses local mock data only. It does not call real APIs or send appointment, registration, SMS, or login requests.
+
+### Implemented Pages
+
+- Home
+- Organization appointment list and details
+- Service officer appointment list and details
+- Product matrix list and details
+- Solution list and details
+- Event area list, details, and registration form
+- My account
+- Demonstration states for login, registration, and guest login
+
+### Privacy Rules
+
+All real names have been replaced with numeric identifiers, for example:
+
+- Service officer 1001
+- Contact 3001
+
+Field names such as "Contact Name" are retained only as form labels and do not represent real personal data.
+
+### How to Run
+
+1. Open WeChat Developer Tools.
+2. Import this directory: `miniprogram`.
+3. Use a test AppID, or use the `touristappid` demonstration configuration included in the project.
+4. Compile and run the project, then enter each module from the home page to explore the prototype.
+
+### Verification
+
+Basic static checks have been completed:
+
+- JSON configuration files can be parsed.
+- JavaScript files pass syntax checks.
+- A search confirmed that the observed real names were not included in the project.
