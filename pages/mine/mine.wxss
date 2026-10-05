@@ -1,0 +1,51 @@
+.mine-content {
+  margin-top: -18rpx;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  padding: 42rpx 34rpx;
+}
+
+.profile-avatar {
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.profile-title {
+  font-size: 40rpx;
+  font-weight: 900;
+}
+
+.profile-subtitle {
+  margin-top: 10rpx;
+  color: #5d6878;
+}
+
+.mine-list {
+  margin-top: 44rpx;
+  padding: 0 32rpx;
+}
+
+.mine-row {
+  height: 102rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #edf0f5;
+}
+
+.mine-row:last-child {
+  border-bottom: 0;
+}
+
+.mine-row-title {
+  font-weight: 700;
+}
+
+.mine-row-value {
+  color: #ee3333;
+  font-size: 26rpx;
+}

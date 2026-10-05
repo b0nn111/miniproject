@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="appbar">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <view class="appbar-title">机构预约</view>
+  </view>
+  <view class="content">
+    <view class="search">
+      <input placeholder="搜索机构或地址" bindinput="onSearch" value="{{keyword}}" />
+      <view class="search-icon">⌕</view>
+    </view>
+  </view>
+  <view class="filter-page">
+    <view class="districts">
+      <block wx:for="{{districts}}" wx:key="*this">
+        <view class="district {{selectedDistrict === item ? 'active' : ''}}" data-name="{{item}}" bindtap="selectDistrict">{{item}}</view>
+      </block>
+    </view>
+    <view class="list card">
+      <block wx:if="{{list.length}}">
+        <block wx:for="{{list}}" wx:key="id">
+          <view class="list-card" data-id="{{item.id}}" bindtap="goDetail">
+            <image class="logo-box image-box" src="/assets/images/logo-agency.jpg" mode="aspectFill" />
+            <view class="item-main">
+              <view class="item-title">{{item.name}}</view>
+              <view class="item-meta">{{item.address}}</view>
+            </view>
+          </view>
+        </block>
+      </block>
+      <view wx:else class="empty">暂无匹配机构</view>
+    </view>
+  </view>
+</view>

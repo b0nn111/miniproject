@@ -1,0 +1,34 @@
+<view class="page">
+  <view class="appbar">
+    <view class="appbar-title">我的</view>
+  </view>
+
+  <view class="content mine-content">
+    <view class="profile-card card" bindtap="onProfileTap">
+      <view class="avatar-box profile-avatar">{{loggedIn ? '访客' : '登录'}}</view>
+      <view>
+        <view class="profile-title">{{loggedIn ? '演示用户' : '登录 | 注册'}}</view>
+        <view class="profile-subtitle">{{loggedIn ? '已进入本地演示态' : 'Hello,欢迎来到数字公共服务平台'}}</view>
+      </view>
+    </view>
+
+    <view class="mine-list card">
+      <view class="mine-row" bindtap="showDemo">
+        <view class="mine-row-title">个人信息</view>
+        <view class="mine-row-value">{{loggedIn ? '查看演示资料' : '请先登录/注册'}} ></view>
+      </view>
+      <view class="mine-row" wx:if="{{loggedIn}}">
+        <view class="mine-row-title">预约记录</view>
+        <view class="mine-row-value">3 条演示记录 ></view>
+      </view>
+      <view class="mine-row" wx:if="{{loggedIn}}">
+        <view class="mine-row-title">活动报名</view>
+        <view class="mine-row-value">2 条演示记录 ></view>
+      </view>
+      <view class="mine-row" wx:if="{{loggedIn}}" bindtap="clearLogin">
+        <view class="mine-row-title">退出演示登录</view>
+        <view class="mine-row-value">清除本地状态 ></view>
+      </view>
+    </view>
+  </view>
+</view>

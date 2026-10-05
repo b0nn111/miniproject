@@ -1,0 +1,22 @@
+<view class="page officer-detail detail-bottom-space">
+  <view class="appbar officer-hero">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <image class="large-avatar" src="{{item.avatarImage}}" mode="aspectFill" />
+  </view>
+  <view class="detail-card card profile-card">
+    <view class="detail-title">{{item.code}}</view>
+    <view class="detail-subtitle">{{item.center}}</view>
+    <view class="tag-row">
+      <block wx:for="{{item.tags}}" wx:key="*this">
+        <view class="tag">{{item}}</view>
+      </block>
+    </view>
+    <view class="detail-subtitle org">{{item.organization}}</view>
+    <view class="detail-subtitle">{{item.title}}</view>
+  </view>
+  <view class="detail-card card">
+    <view class="section-title">服务官介绍</view>
+    <view class="detail-subtitle">{{item.intro}}</view>
+  </view>
+  <view class="bottom-action" bindtap="book">服务官预约</view>
+</view>

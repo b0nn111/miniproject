@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/agency-list/agency-list",
+    "pages/agency-detail/agency-detail",
+    "pages/officer-list/officer-list",
+    "pages/officer-detail/officer-detail",
+    "pages/product-list/product-list",
+    "pages/product-detail/product-detail",
+    "pages/solution-list/solution-list",
+    "pages/solution-detail/solution-detail",
+    "pages/activity-list/activity-list",
+    "pages/activity-detail/activity-detail",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/register/register"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#f6f8fc"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#9aa6b8",
+    "selectedColor": "#1177f2",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/icons/tab-home.png",
+        "selectedIconPath": "assets/icons/tab-home-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/icons/tab-mine.png",
+        "selectedIconPath": "assets/icons/tab-mine-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

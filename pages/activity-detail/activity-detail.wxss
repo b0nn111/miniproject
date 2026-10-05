@@ -1,0 +1,8 @@
+.detail-bottom-space {
+  padding-bottom: 140rpx;
+}
+
+.field-row {
+  align-items: flex-start;
+  padding: 22rpx 0;
+}

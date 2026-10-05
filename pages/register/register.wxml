@@ -1,0 +1,53 @@
+<view class="page register-page detail-bottom-space">
+  <view class="appbar">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <view class="appbar-title">注册</view>
+  </view>
+
+  <view class="login-logo compact">
+    <view class="logo-mark">100</view>
+    <view class="logo-main">上海市数字公共服务</view>
+  </view>
+
+  <view class="detail-card card form-card">
+    <view class="field-row">
+      <view class="field-label">+86</view>
+      <input class="field-input" type="number" placeholder="请输入手机号" data-key="phone" bindinput="onFieldInput" />
+    </view>
+    <view class="field-row">
+      <view class="field-label">验证码</view>
+      <input class="field-input" placeholder="请输入验证码" data-key="code" bindinput="onFieldInput" />
+      <view class="code-btn" bindtap="getCode">获取验证码</view>
+    </view>
+
+    <view class="form-section-title">信息补充</view>
+    <view class="type-row">
+      <view class="type-pill {{accountType === '企业' ? 'active' : ''}}" data-type="企业" bindtap="chooseType">企业</view>
+      <view class="type-pill {{accountType === '团队（个人）' ? 'active' : ''}}" data-type="团队（个人）" bindtap="chooseType">团队（个人）</view>
+    </view>
+
+    <view class="field-row">
+      <view class="field-label">企业名称</view>
+      <input class="field-input" placeholder="请输入企业名称" data-key="company" bindinput="onFieldInput" />
+    </view>
+    <view class="field-row">
+      <view class="field-label">信用代码</view>
+      <input class="field-input" placeholder="请输入信用代码" data-key="creditCode" bindinput="onFieldInput" />
+    </view>
+    <view class="field-row">
+      <view class="field-label">用户名</view>
+      <input class="field-input" placeholder="请输入用户名" data-key="username" bindinput="onFieldInput" />
+    </view>
+    <view class="field-row">
+      <view class="field-label">密码</view>
+      <input class="field-input" password placeholder="请输入密码" data-key="password" bindinput="onFieldInput" />
+    </view>
+  </view>
+
+  <view class="agreement" bindtap="toggleAgree">
+    <view class="checkbox {{agreed ? 'checked' : ''}}"></view>
+    <view>我已阅读并同意《用户服务协议》和《隐私政策》</view>
+  </view>
+
+  <view class="bottom-action" bindtap="submit">注册</view>
+</view>

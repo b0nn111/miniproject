@@ -1,0 +1,21 @@
+<view class="page detail-bottom-space">
+  <view class="appbar">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <view class="appbar-title">机构详情</view>
+  </view>
+  <view class="detail-card card">
+    <image class="logo-box detail-logo image-box" src="/assets/images/logo-agency.jpg" mode="aspectFill" />
+    <view class="detail-title">{{item.name}}</view>
+    <view class="detail-subtitle">{{item.address}}</view>
+    <view class="tag-row">
+      <view class="tag">{{item.district}}</view>
+      <view class="tag">公共服务</view>
+      <view class="tag">线下预约</view>
+    </view>
+  </view>
+  <view class="detail-card card">
+    <view class="section-title">服务范围</view>
+    <view class="detail-subtitle">{{item.scope}}</view>
+  </view>
+  <view class="bottom-action" bindtap="book">预约咨询</view>
+</view>

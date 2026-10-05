@@ -1,0 +1,35 @@
+<view class="page">
+  <view class="appbar">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <view class="appbar-title">产品矩阵</view>
+  </view>
+  <view class="content">
+    <view class="search">
+      <input placeholder="搜索产品或服务商" bindinput="onSearch" value="{{keyword}}" />
+      <view class="search-icon">⌕</view>
+    </view>
+  </view>
+  <view class="filter-page">
+    <view class="districts">
+      <block wx:for="{{districts}}" wx:key="*this">
+        <view class="district {{selectedDistrict === item ? 'active' : ''}}" data-name="{{item}}" bindtap="selectDistrict">{{item}}</view>
+      </block>
+    </view>
+    <view class="list card">
+      <block wx:if="{{list.length}}">
+        <block wx:for="{{list}}" wx:key="id">
+          <view class="list-card" data-id="{{item.id}}" bindtap="goDetail">
+            <image class="logo-box image-box" src="/assets/images/logo-product.jpg" mode="aspectFill" />
+            <view class="item-main">
+              <view class="item-title">{{item.title}}</view>
+              <view wx:if="{{item.trial}}" class="badge orange">可试用</view>
+              <view class="item-meta">{{item.provider}}</view>
+              <view class="item-meta">{{item.summary}}</view>
+            </view>
+          </view>
+        </block>
+      </block>
+      <view wx:else class="empty">暂无匹配产品</view>
+    </view>
+  </view>
+</view>

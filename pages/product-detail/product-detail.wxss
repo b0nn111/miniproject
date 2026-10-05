@@ -1,0 +1,11 @@
+.detail-bottom-space {
+  padding-bottom: 140rpx;
+}
+
+.detail-logo {
+  margin-bottom: 24rpx;
+}
+
+.badge {
+  margin-top: 14rpx;
+}

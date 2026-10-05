@@ -1,0 +1,32 @@
+.detail-bottom-space {
+  padding-bottom: 140rpx;
+}
+
+.officer-hero {
+  min-height: 310rpx;
+  align-items: flex-end;
+  padding-bottom: 48rpx;
+}
+
+.large-avatar {
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgba(255,255,255,.85);
+  background: linear-gradient(135deg, #f0f6ff, #c9def7);
+  color: #24476f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42rpx;
+  font-weight: 900;
+  box-shadow: 0 14rpx 32rpx rgba(19, 63, 137, .18);
+}
+
+.profile-card {
+  margin-top: -4rpx;
+}
+
+.org {
+  margin-top: 28rpx;
+}

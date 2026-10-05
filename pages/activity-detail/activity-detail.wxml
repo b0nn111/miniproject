@@ -1,0 +1,52 @@
+<view class="page detail-bottom-space">
+  <view class="appbar">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <view class="appbar-title">活动详情</view>
+  </view>
+
+  <view class="detail-card card">
+    <view class="section-title">活动信息</view>
+    <view class="field-row">
+      <view class="field-label">参与活动</view>
+      <view class="field-value">{{item.title}}</view>
+    </view>
+    <view class="field-row">
+      <view class="field-label">活动简介</view>
+      <view class="field-value">{{item.intro}}</view>
+    </view>
+    <view class="field-row">
+      <view class="field-label">会议议程</view>
+      <view class="field-value">{{item.agenda}}</view>
+    </view>
+    <view class="field-row">
+      <view class="field-label">时间地点</view>
+      <view class="field-value">{{item.venue}} | {{item.time}}</view>
+    </view>
+    <view class="field-row">
+      <view class="field-label">参与联系人</view>
+      <view class="field-value">{{item.contact}} | {{item.phone}}</view>
+    </view>
+  </view>
+
+  <view class="detail-card card">
+    <view class="section-title">活动报名</view>
+    <view class="field-row">
+      <view class="field-label">参会单位</view>
+      <input class="field-input" placeholder="请输入您的单位名称" data-key="company" bindinput="onFieldInput" />
+    </view>
+    <view class="field-row">
+      <view class="field-label">联系人姓名</view>
+      <input class="field-input" placeholder="请输入联系人姓名" data-key="contactName" bindinput="onFieldInput" />
+    </view>
+    <view class="field-row">
+      <view class="field-label">联系人职务</view>
+      <input class="field-input" placeholder="请输入您的职务" data-key="position" bindinput="onFieldInput" />
+    </view>
+    <view class="field-row">
+      <view class="field-label">联系方式</view>
+      <input class="field-input" type="number" placeholder="请输入手机号" data-key="phone" bindinput="onFieldInput" />
+    </view>
+  </view>
+
+  <view class="bottom-action" bindtap="submit">提交预约</view>
+</view>

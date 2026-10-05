@@ -1,0 +1,56 @@
+<view class="page">
+  <view class="appbar">
+    <view class="appbar-title">数服汇</view>
+  </view>
+
+  <view class="content home-content">
+    <view class="hero card">
+      <image class="hero-image" src="{{banner}}" mode="aspectFill" />
+    </view>
+
+    <view class="dot"></view>
+
+    <view class="entry-card card">
+      <block wx:for="{{entries}}" wx:key="label">
+        <view class="entry" bindtap="goEntry" data-path="{{item.path}}">
+          <view class="entry-icon">
+            <image class="entry-icon-image" src="{{item.iconSrc}}" mode="aspectFit" />
+          </view>
+          <view class="entry-label">{{item.label}}</view>
+        </view>
+      </block>
+    </view>
+
+    <view class="section-title-row">
+      <view class="section-title">新闻资讯</view>
+      <view class="more" bindtap="goNews">更多 ></view>
+    </view>
+    <view class="news-list card">
+      <block wx:for="{{news}}" wx:key="id">
+        <view class="news-item" bindtap="goNews">
+          <image class="news-thumb" src="{{item.image}}" mode="aspectFill" />
+          <view class="news-text">
+            <view class="item-title">{{item.title}}</view>
+            <view class="item-meta">{{item.summary}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <view class="section-title-row">
+      <view class="section-title">热门服务官</view>
+      <view class="more" bindtap="goEntry" data-path="/pages/officer-list/officer-list">更多 ></view>
+    </view>
+    <view class="officer-strip card">
+      <block wx:for="{{officers}}" wx:key="id">
+        <view class="officer-mini" bindtap="goOfficer" data-id="{{item.id}}">
+          <image class="avatar-box image-box" src="{{item.avatarImage}}" mode="aspectFill" />
+          <view class="item-main">
+            <view class="item-title">{{item.code}}</view>
+            <view class="item-meta">{{item.organization}} {{item.title}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,60 @@
+.login-page {
+  background: #f6f8fc;
+}
+
+.login-logo {
+  padding: 80rpx 32rpx 60rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-mark {
+  font-size: 92rpx;
+  font-weight: 900;
+  line-height: 1;
+  color: #12b6d9;
+}
+
+.logo-main {
+  margin-top: 18rpx;
+  color: #00a985;
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.logo-sub {
+  margin-top: 6rpx;
+  color: #1bb2c7;
+  font-size: 16rpx;
+  letter-spacing: 0;
+}
+
+.login-actions {
+  padding: 0 32rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 26rpx;
+}
+
+.primary-btn,
+.secondary-btn {
+  height: 86rpx;
+  border-radius: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  font-weight: 800;
+}
+
+.primary-btn {
+  color: #fff;
+  background: linear-gradient(100deg, #08a8f7, #22ca5d);
+}
+
+.secondary-btn {
+  color: #333c4d;
+  background: #fff;
+  border: 1rpx solid #edf0f5;
+}

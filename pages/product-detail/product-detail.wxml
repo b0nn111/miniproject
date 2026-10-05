@@ -1,0 +1,22 @@
+<view class="page detail-bottom-space">
+  <view class="appbar">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <view class="appbar-title">产品详情</view>
+  </view>
+  <view class="detail-card card">
+    <image class="logo-box detail-logo image-box" src="/assets/images/logo-product.jpg" mode="aspectFill" />
+    <view class="detail-title">{{item.title}}</view>
+    <view wx:if="{{item.trial}}" class="badge orange">可试用</view>
+    <view class="detail-subtitle">{{item.provider}}</view>
+    <view class="tag-row">
+      <block wx:for="{{item.tags}}" wx:key="*this">
+        <view class="tag">{{item}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="detail-card card">
+    <view class="section-title">产品说明</view>
+    <view class="detail-subtitle">{{item.summary}}</view>
+  </view>
+  <view class="bottom-action" bindtap="requestTrial">申请试用</view>
+</view>

@@ -1,0 +1,17 @@
+.activity-card {
+  padding-right: 6rpx;
+}
+
+.activity-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16rpx;
+}
+
+.activity-title-row .item-title {
+  flex: 1;
+}
+
+.activity-title-row .badge {
+  flex-shrink: 0;
+}

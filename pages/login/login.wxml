@@ -1,0 +1,18 @@
+<view class="page login-page">
+  <view class="appbar">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <view class="appbar-title">登录</view>
+  </view>
+
+  <view class="login-logo">
+    <view class="logo-mark">100</view>
+    <view class="logo-main">上海市数字公共服务</view>
+    <view class="logo-sub">SHANGHAI DIGITAL PUBLIC SERVICE</view>
+  </view>
+
+  <view class="login-actions">
+    <view class="primary-btn" bindtap="smsLogin">账号/短信登录</view>
+    <view class="secondary-btn" bindtap="goRegister">账号注册</view>
+    <view class="secondary-btn" bindtap="guestLogin">以游客身份登录</view>
+  </view>
+</view>

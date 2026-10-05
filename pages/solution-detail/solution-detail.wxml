@@ -1,0 +1,21 @@
+<view class="page detail-bottom-space">
+  <view class="appbar">
+    <view class="appbar-back" bindtap="goBack">‹</view>
+    <view class="appbar-title">方案详情</view>
+  </view>
+  <view class="detail-card card">
+    <image class="logo-box detail-logo image-box" src="/assets/images/logo-solution.jpg" mode="aspectFill" />
+    <view class="detail-title">{{item.title}}</view>
+    <view class="detail-subtitle">{{item.summary}}</view>
+    <view class="detail-subtitle">服务方：{{item.provider}}</view>
+  </view>
+  <view class="detail-card card">
+    <view class="section-title">预期收益</view>
+    <block wx:for="{{item.benefits}}" wx:key="*this">
+      <view class="field-row">
+        <view class="field-value">{{item}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="bottom-action" bindtap="consult">咨询方案</view>
+</view>
